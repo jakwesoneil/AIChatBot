@@ -50,6 +50,7 @@ if st.button("Get Help"):
             try:
                 response = generate_response(api_key, user_input)
                 st.success("Here's some advice for your issue!")
-                st.text_area("AI Helper Response:", response.text, height=200)
+                with st.container(border=True):
+                    st.markdown(response.text)
             except Exception as e:
                 st.error(f"Error: {e}")
