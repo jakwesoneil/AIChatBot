@@ -44,9 +44,3 @@ if st.button("Submit"):
                 st.text_area("Model Response:", response.text, height=200)
             except Exception as e:
                 st.error(f"Error: {e}")
-
-# Additional sections for data analysis or visualization
-st.subheader("Additional Features")
-st.markdown(
-    "You can extend this app by adding data visualization, file upload, or other Streamlit features."
-)
